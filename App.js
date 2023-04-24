@@ -26,6 +26,6 @@ import { NavigationContainer, stackActions } from "@react-navigation/native";
       flex: 1,
       backgroundColor: '#fff',
       paddingTop: 30,
-      paddingHorizontal: 15
+      paddingHorizontal: 10
     }
   })
