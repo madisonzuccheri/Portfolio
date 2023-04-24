@@ -1,0 +1,33 @@
+[
+  {
+    "prompt": "What is Madisons favorite color",
+  "type": "multiple-choice",
+  "choices": [
+    "pink",
+    "blue",
+    "red",
+    "purple"
+  ],
+  "correct": 0
+},
+  {
+    "prompt": "What is Madisons favorite food",
+  "type": "multiple-answer",
+  "choices": [
+    "Pizza",
+    "Spagetti",
+    "Tacos",
+    "Mac and cheese"
+  ],
+  "correct": [0,2]
+},
+  {
+  "prompt": "Madison loves cats",
+  "type": "true-false",
+  "choices": [
+    "False",
+    "True"
+  ],
+  "correct": 1
+}
+]
