@@ -29,5 +29,28 @@
     "True"
   ],
   "correct": 1
+},
+{
+  "prompt": "Match the following animals to their habitats:",
+  "type": "matching",
+  "leftColumn": [
+    "Polar bear",
+    "Kangaroo",
+    "Giraffe",
+    "Koala"
+  ],
+  "rightColumn": [
+    "Arctic",
+    "Outback",
+    "Savannah",
+    "Eucalyptus forest"
+  ],
+  "correct": {
+    "Polar bear": "Arctic",
+    "Kangaroo": "Outback",
+    "Giraffe": "Savannah",
+    "Koala": "Eucalyptus forest"
+  }
 }
+
 ]

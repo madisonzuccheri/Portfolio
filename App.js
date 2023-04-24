@@ -25,7 +25,7 @@ import { NavigationContainer, stackActions } from "@react-navigation/native";
     container: {
       flex: 1,
       backgroundColor: '#fff',
-      paddingTop: 30,
-      paddingHorizontal: 10
+      paddingTop: 20,
+      paddingHorizontal: 15
     }
   })

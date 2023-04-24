@@ -82,13 +82,20 @@ export default function Question({ route }) {
       case "true-false":
         setChoiceIndex(index);
         break;
+      case "matching":
+        const newChoicesIndex = [...choicesIndex];
+        const matchIndex = newChoicesIndex.findIndex((item) => item === null);
+        newChoicesIndex[matchIndex] = index;
+        setChoicesIndex(newChoicesIndex);
+        break;
     }
   };
 
   const submitQuestion = () => {
     // TODO: check answer and update score
     const newAnswers = [...answers];
-    newAnswers[questionIndex] = type === "multiple-answer" ? choicesIndex : choiceIndex;
+    newAnswers[questionIndex] =
+      type === "multiple-answer" ? choicesIndex : choiceIndex;
     setAnswers(newAnswers);
 
     if (questionIndex === data.length - 1) {
@@ -100,6 +107,7 @@ export default function Question({ route }) {
     setChoiceIndex(null);
     setChoicesIndex([]);
   };
+
 
   if (answers.length === data.length) {
     // If the user has answered all questions, show the summary
